@@ -1,0 +1,16 @@
+<svg width="1920" height="898" viewBox="0 0 1920 898" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Vector 2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(8004 1492)">
+<g id="Vector 2">
+<use xlink:href="#path0_fill" transform="translate(-8006 -1492)" fill="url(#paint0_linear)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-17 885 -1898.73 -36.4729 1910.37 18.2364)">
+<stop offset="0" stop-color="#3826B1"/>
+<stop offset="0.939227" stop-color="#3826B1" stop-opacity="0.46"/>
+</linearGradient>
+<path id="path0_fill" d="M 272 694C 150.516 663.854 38.6667 594.333 0 551L 0 0L 1922 0L 1922 718C 1560 1026 1270 872 1032 734C 794 596 542 761 272 694Z"/>
+</defs>
+</svg>

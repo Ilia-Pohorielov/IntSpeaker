@@ -1,39 +1,35 @@
 @font-face {
-  font-family: 'Gilroy';
-  src: url('./fonts/GILROY-BOLD.eot');
-  src: url('./fonts/Gilroy-Bold.eot') format('embedded-opentype'),
-  url('./fonts/Gilroy-Bold.ttf') format('truetype'),
-  url('./fonts/Gilroy-Bold.svg#Gilroy-Bold') format('svg');
+  font-family: 'Helvetica';
+  src: url('./fonts/HelveticaNeueCyr-Bold.eot');
+  src: url('./fonts/HelveticaNeueCyr-Bold.eot') format('embedded-opentype'),
+  url('./fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Gilroy';
-  src: url('./fonts/GILROY-LIGHT.eot');
-  src: url('./fonts/Gilroy-Light.eot') format('embedded-opentype'),
-  url('./fonts/Gilroy-Light.woff') format('woff'),
-  url('./fonts/Gilroy-Light.ttf') format('truetype'),
-  url('./fonts/Gilroy-Light.svg#Gilroy-Light') format('svg');
+  font-family: 'Helvetica';
+  src: url('./fonts/HelveticaNeueCyr-Light.eot');
+  src: url('./fonts/HelveticaNeueCyr-Light.eot') format('embedded-opentype'),
+  url('./fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+  url('./fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Gilroy';
-  src: url('./fonts/GILROY-MEDIUM.eot');
-  src: url('./fonts/Gilroy-Medium.eot') format('embedded-opentype'),
-  url('./fonts/Gilroy-Medium.woff') format('woff'),
-  url('./fonts/Gilroy-Medium.ttf') format('truetype'),
-  url('./fonts/Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+  font-family: 'Helvetica';
+  src: url('./fonts/HelveticaNeueCyr-Medium.eot');
+  src: url('./fonts/HelveticaNeueCyr-Medium.eot') format('embedded-opentype'),
+  url('./fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+  url('./fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Gilroy';
-  src: url('./fonts/GILROY-REGULAR.eot');
-  src: url('./fonts/Gilroy-Regular.eot') format('embedded-opentype'),
-  url('./fonts/Gilroy-Regular.woff') format('woff'),
-  url('./fonts/Gilroy-Regular.ttf') format('truetype'),
-  url('./fonts/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
+  font-family: 'HelveticaNeueCyr';
+  src: url('./fonts/HelveticaNeueCyr-Roman.eot');
+  src: url('./fonts/HelveticaNeueCyr-Roman.eot') format('embedded-opentype'),
+  url('./fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+  url('./fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
