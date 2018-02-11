@@ -1,3 +1,6 @@
+header {
+  position: relative;
+}
 .header-top {
   padding: 25px 0; display: flex; justify-content: space-between; background: #00b8d4; align-items: center; background: $color-white;
   .logo {
@@ -12,6 +15,9 @@
           &:hover, &:active, &:focus {
             background: transparent;
           }
+          @media (max-width: 1020px) {
+            width: 100px;
+          }
         }
         &:not(:last-child) {
           margin-right: 17px;
@@ -25,11 +31,59 @@
         }
       }
     }
+    @media (max-width: 900px) {
+      position: absolute; top: 100%; left: 0; right: 0; background: $color-white; z-index: 100; border-top: 1px solid rgba($color-black, .1); padding-bottom: 20px;
+      box-shadow: 0 15px 20px -15px $color-black; display: none;
+      ul {
+        li {
+          display: block; float: none; text-align: center;
+          span, a {
+            width: auto; display: inline-block;
+          }
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+          &:last-child {
+            a {
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
   }
   .support {
-    line-height: 20px; font-size: 15px;
+    line-height: 20px; font-size: 15px; display: flex; align-items: center;
   }
   .hamburger {
-    display: none;
+    display: none; width: 50px; height: 25px; position: relative; margin-left: 15px;
+    i {
+      position: absolute; left: 0; right: 0; height: 3px; background: linear-gradient(94.47deg, #3826B0 -43.91%, #C86DD7 107.21%); transition: all .3s ease;
+      &:first-child {
+        top: 0;
+      }
+      &:nth-child(2) {
+        top: 50%; margin-top: -1.5px;
+      }
+      &:last-child {
+        bottom: 0;
+      }
+    }
+    &.active {
+      i {
+        &:first-child {
+          top: 50%;  margin-top: -1.5px; transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          bottom: 50%; margin-bottom: -1.5px; transform: rotate(-45deg);
+        }
+      }
+    }
+    @media (max-width: 900px) {
+      display: block;
+    }
   }
 }

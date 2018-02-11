@@ -52,7 +52,7 @@ sup {
   background: none;
 }
 @include placeholder() {
-  font-size: 14px; color: #7f7f7f;
+  font-size: 14px; color: #6C6C6C;
 }
 .wrapper {
   max-width: 1560px; padding: 0 15px; margin: 0 auto;
@@ -69,6 +69,19 @@ sup {
 }
 .title-block {
   line-height: 40px; font-size: 31px; text-transform: uppercase; text-align: center; max-width: 610px; margin: 0 auto; font-weight: bold;
+  @media (max-width: 600px) {
+    font-size: 25px; line-height: 35px;
+  }
+}
+.title-block__inner {
+  line-height: 11vw; font-size: 8vw; text-align: center; text-transform: uppercase; color: rgba($color-white, 0.04); position: relative; margin-bottom: 50px; font-weight: bold;
+  span {
+    line-height: 40px; font-size: 31px; text-align: center; text-transform: uppercase; color: $color-white; font-weight: bold; position: absolute;
+    left: 50%; top: 20%; transform: translateX(-50%); padding-bottom: 20px; width: 100%;
+    &:after {
+      content: ''; display: block; width: 93px; height: 3px; background: $color-purple; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+    }
+  }
 }
 /* END TITLE */
 /** BEGIN BTN STYLE **/
@@ -194,37 +207,41 @@ sup {
   background: $color-blue;
 }
 /* STYLE FORM */
-input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
-   margin-bottom: 10px; height: 47px; border: 1px solid #d9d5d5; padding: 0 15px;
- }
+input,
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+  background: $color-white; border: 1px solid #DEDEDE; box-sizing: border-box; border-radius: 5px; height: 46px; width: 100%; margin: 0 0 8px 0; padding-left: 50px;
+}
 textarea {
-  border: 1px solid #d9d5d5; min-height: 150px; padding: 15px; margin-bottom: 20px;
+  border: 1px solid #DEDEDE; border-radius: 5px; min-height: 100px; padding: 15px; background: $color-white;
 }
 /* SLIDER STYLE */
  .slick-arrow {
-   width: 30px; height: 57px; opacity: 1; top: 57%;
+   width: 82px; height: 82px; border-radius: 50%; background: linear-gradient(270deg, #3827B1 -13.41%, #B06CD3 100%); opacity: 1; top: 55%; transform: translateY(-50%);
    &:before {
-     font-size: 70px; font-family: "Icons"; color: #3022e3; opacity: 1;
+     width: 16px; height: 30px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); text-indent: -9999px; opacity: 1;
    }
    &.slick-next {
-     right: -4%;
+     right: -12%;
      &:before {
-       content: '\E00E';
+       background: url("../images/icons/arrow-right.svg")no-repeat 0 0 /contain;
      }
    }
    &.slick-prev {
-     transform: rotate(-180deg); left: -4%; transform-origin: 0 37%;
+     left: -12%;
      &:before {
-       content: '\E00E';
+       background: url("../images/icons/arrow-left.svg")no-repeat 0 0 /contain;
      }
    }
-   @media (max-width: 1500px) {
-     &.slick-next {
-       right: 0;
-     }
-     &.slick-prev {
-       left: 0;
-     }
+   &:hover,&:focus, &:active {
+     background: linear-gradient(270deg, #3827B1 -13.41%, #B06CD3 100%); opacity: 1;
    }
  }
 @keyframes animatedgradient {
@@ -238,10 +255,20 @@ textarea {
     background-position: 0% 50%;
   }
 }
+.form-group {
+  &.has-error {
+    input, textarea {
+      border-color: #ff0d24;
+    }
+    @include placeholder() {
+      color: #ff0d24;
+    }
+  }
+}
 .slick-dots {
   bottom: auto; left: auto; right: 0; top: 50%; width: auto;
   li {
-    display: block; padding: 0; width: 6px; height: 6px; background: #ADADAD; margin: 0; border-radius: 50%;
+    display: block; padding: 0; width: 6px; height: 6px; background: #ADADAD; margin: 0 auto; border-radius: 50%;
     button {
       &:before {
         content: none;
@@ -251,7 +278,7 @@ textarea {
        width: 10px; height: 10px; background: $color-white;
     }
     &:not(:last-child) {
-      margin: 0 0 20px;
+      margin: 0 auto 20px;
     }
   }
 }

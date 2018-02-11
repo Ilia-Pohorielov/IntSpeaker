@@ -42,13 +42,13 @@
                 .wrapper
                     .title-block multitasking is the key element of success and profit
                     .profits.row
-                        .profit-item.col.l4
+                        .profit-item.col.l4.m4.s12
                             .profit-time 1s
                             .description One second can turn your future upside down
-                        .profit-item.col.l4
+                        .profit-item.col.l4.m4.s12
                             .profit-time 1m
                             .description One minute may award you with once-in-a-lifetime opportunity
-                        .profit-item.col.l4
+                        .profit-item.col.l4.m4.s12
                             .profit-time 1h
                             .description One hour can teach you the lesson you’ll forever appreciate
             .block-management
@@ -72,45 +72,126 @@
                 .wrapper
                     .title-block Have you ever thought how much time of your life is wasted in vain?
                     .vain.row
-                        .vain-time.col.l3
+                        .vain-time.col.l3.m3.s12
                             span.time 42 h
                             | Standing in a traffic jam
-                        .vain-time.col.l3
+                        .vain-time.col.l3.m3.s12
                             span.time 72 h
                             | Bathing
-                        .vain-time.col.l3
+                        .vain-time.col.l3.m3.s12
                             span.time 96 h
                             | Doing household chores
-                        .vain-time.col.l3
+                        .vain-time.col.l3.m3.s12
                             span.time 144 h
                             | Exercising
             .block-achive
                 .wrapper
                     .title-block What could you achieve if you had 1218 spare hours?
                     .achives.row
-                        .achives-item.col.l3
+                        .achives-item.col.l3.m3.s12
                             .image(style="background: url('images/count-1.png')no-repeat 0 0 /contain")
                                 img(src="images/icons/car.svg", alt="#")
                             .description.
                                 Standing in a traffic jam
-                        .achives-item.col.l3
+                        .achives-item.col.l3.m3.s12
                             .image(style="background: url('images/count-2.png')no-repeat 0 0 /contain")
                                 img(src="images/icons/bathing.svg", alt="#")
                             .description.
                                 Bathing
-                        .achives-item.col.l3
+                        .achives-item.col.l3.m3.s12
                             .image(style="background: url('images/count-3.png')no-repeat 0 0 /contain")
                                 img(src="images/icons/chores.svg", alt="#")
                             .description.
                                 Doing household chores
-                        .achives-item.col.l3
+                        .achives-item.col.l3.m3.s12
                             .image(style="background: url('images/count-4.png')no-repeat 0 0 /contain")
                                 img(src="images/icons/exercising.svg", alt="#")
                             .description.
                                 Exercising
-
-
-
+            .block-features
+                .image-features
+                    img(src="images/bg-features.png", alt="#")
+                .wrapper
+                    .features
+                        .title-block Features
+                        .feature-item.col.l6.m6.s12
+                            .title-item Integration
+                            .description.
+                                Using Intelligent Speaker, effective browser extension with crafted text-to-speech engine, you are able to listen to latest news, your favorite articles and blog posts. Read books and magazines with no eye strain.
+                        .feature-item.col.l6.m6.s12
+                            .title-item Nation Picks
+                            .description.
+                                Add your favourite texts to playlists and find your previously played texts easily from history feed.
+                        .feature-item.col.l6.m6.s12
+                            .title-item Collaboration
+                            .description.
+                                Stay in touch with your working activities by listening to your emails, open and listen text files from your desktop.
+                        .feature-item.col.l6.m6.s12
+                            .title-item Collaboration
+                            .description.
+                                Stay in touch with your working activities by listening to your emails, open and listen text files from your desktop.
+            .block-advantages
+                .wrapper
+                    .title-block__inner What you get
+                        span What you get?
+                    .advantages.row
+                        .advantages-item.col.l2.m3.s12
+                            .image
+                                img(src="images/icons/planet.svg", alt="#")
+                            .description Languages
+                        .advantages-item.col.l2.m3.s12
+                            .image
+                                img(src="images/icons/voice.svg", alt="#")
+                            .description Voices
+                        .advantages-item.col.l2.m3.s12
+                            .image
+                                img(src="images/icons/download.svg", alt="#")
+                            .description Download and share audio
+                        .advantages-item.col.l2.m3.s12
+                            .image
+                                img(src="images/icons/podcast.svg", alt="#")
+                            .description Private podcast feed
+                        .advantages-item.col.l2.m3.s12
+                            .image
+                                img(src="images/icons/test.svg", alt="#")
+                            .description Free during beta test
+            .block-testimonials
+                .title-block__inner Testimonials
+                    span Testimonials
+                .testimonials-slider.js-slider-testimonial
+                    .testimonial-item
+                        .image
+                            img(src="", alt="")
+                        .description
+                            span.text.
+                                I create gastronomical masterpieces without flipping through cookbook pages I finished my
+                                7th book while taking bath. I listen my documents while dandling my child
+                            span.name Jane Stevenson
+                    .testimonial-item
+                        .image
+                            img(src="", alt="")
+                        .description
+                            span.text.
+                                I create gastronomical masterpieces without flipping through cookbook pages I finished my
+                                7th book while taking bath. I listen my documents while dandling my child
+                            span.name Jane Stevenson
+            .block-feedback
+                .wrapper
+                    .form-feedback
+                        .title-block Intelligent Speaker.
+                            br
+                            | Use your time intelligent.
+                        form(action="/").js_validate
+                            .title-form Write us your feedback
+                            .group-control
+                                .group-btn
+                                    .form-group.email
+                                        input(type="email", data-validate="email", placeholder="Email", required="")
+                                    .form-group.name
+                                        input(type="name", placeholder="Name", required="")
+                                .form-group
+                                    textarea(placeholder="Your Message", required="")
+                            button(type="submit").btn.btn-feedback Send
 
         include template/_footer
         script(type='text/javascript', src='js/all-plugins.js')
